@@ -1,0 +1,125 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 67 - Keyframe Animations</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        .nav {
+            background: white;
+            padding: 15px 25px;
+        }
+
+        .nav a {
+            color: #2563eb;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .animation-box {
+            width: 120px;
+            height: 120px;
+            margin: 60px auto;
+            background: #2563eb;
+            border-radius: 10px;
+
+            animation-name: moveBox;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes moveBox {
+
+            0% {
+                transform: translateX(-200px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateX(0) rotate(180deg);
+            }
+
+            100% {
+                transform: translateX(200px) rotate(360deg);
+            }
+        }
+
+        .info {
+            background: white;
+            padding: 25px;
+            text-align: left;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        code {
+            background: #e5e7eb;
+            padding: 3px 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="index.html">← CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-68.html">Next →</a>
+    </div>
+
+    <div class="container">
+
+        <h1>CSS Keyframe Animation</h1>
+
+        <p>
+            The box continuously moves and rotates using
+            <strong>@keyframes</strong>.
+        </p>
+
+        <div class="animation-box"></div>
+
+        <div class="info">
+
+            <h2>Animation Properties</h2>
+
+            <p>
+                <code>@keyframes</code> defines the stages of an animation.
+            </p>
+
+            <p>
+                <code>animation-duration</code> defines how long the
+                animation takes.
+            </p>
+
+            <p>
+                <code>animation-iteration-count</code> controls how many
+                times the animation runs.
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

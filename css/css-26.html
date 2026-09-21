@@ -1,0 +1,114 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance and Specificity</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #12355b;
+            text-align: center;
+        }
+
+        .parent {
+            color: #2563a6;
+            font-size: 18px;
+        }
+
+        .child {
+            font-weight: bold;
+        }
+
+        p {
+            color: green;
+        }
+
+        .special {
+            color: orange;
+        }
+
+        #unique {
+            color: red;
+        }
+
+        .box {
+            padding: 20px;
+            background: #eaf1f8;
+            margin-top: 20px;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 25px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            background: #12355b;
+            color: white;
+            padding: 10px 18px;
+            margin: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>CSS Inheritance and Specificity</h1>
+
+        <div class="box parent">
+
+            <p>This paragraph inherits the font family from the parent.</p>
+
+            <p class="child">
+                This text also inherits the parent color.
+            </p>
+
+        </div>
+
+        <div class="box">
+
+            <p>This paragraph uses the element selector.</p>
+
+            <p class="special">
+                This paragraph uses a class selector.
+            </p>
+
+            <p id="unique">
+                This paragraph uses an ID selector and has higher specificity.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="index.html">Back to CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-27.html">Next Program</a>
+    </div>
+
+</body>
+</html>
+```

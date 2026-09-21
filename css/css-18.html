@@ -1,0 +1,123 @@
+```html id="r5d7cz"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Program 18</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fb;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 12px;
+        }
+
+        .animation-area {
+            height: 200px;
+            position: relative;
+            background-color: #eff6ff;
+            border: 2px solid #bfdbfe;
+            overflow: hidden;
+        }
+
+        .animated-box {
+            width: 80px;
+            height: 80px;
+            background-color: #2563eb;
+            border-radius: 10px;
+            position: absolute;
+            top: 60px;
+            left: 0;
+
+            animation: moveBox 4s infinite alternate ease-in-out;
+        }
+
+        @keyframes moveBox {
+            from {
+                left: 0;
+                transform: rotate(0deg);
+            }
+
+            to {
+                left: calc(100% - 80px);
+                transform: rotate(360deg);
+            }
+        }
+
+        .navigation {
+            margin-top: 25px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            margin-right: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CSS Program 18</h1>
+    <p>CSS Animations</p>
+</header>
+
+<main class="container">
+
+    <h2>Animated Box</h2>
+
+    <p>
+        The box moves from left to right and rotates using
+        CSS keyframe animation.
+    </p>
+
+    <div class="animation-area">
+        <div class="animated-box"></div>
+    </div>
+
+    <div class="navigation">
+        <a href="index.html">Back to CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-19.html">Next Program →</a>
+    </div>
+
+</main>
+
+<footer>
+    HTML & CSS & JavaScript Practical Programs
+</footer>
+
+</body>
+</html>
+```

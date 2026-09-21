@@ -1,0 +1,150 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 52 - Responsive Footer</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        main {
+            min-height: 400px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        footer {
+            background: #1e3a8a;
+            color: white;
+            padding: 30px;
+        }
+
+        .footer-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .footer-box {
+            flex: 1;
+        }
+
+        .footer-box h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer-box a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 7px 0;
+        }
+
+        .footer-box a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 25px;
+            border-top: 1px solid #93c5fd;
+            padding-top: 15px;
+        }
+
+        .nav {
+            padding: 15px;
+            background: white;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #2563eb;
+            margin-right: 15px;
+        }
+
+        @media (max-width: 700px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            main {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="index.html">← CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-53.html">Next →</a>
+    </div>
+
+    <header>
+        <h1>Responsive Footer</h1>
+        <p>CSS responsive footer demonstration</p>
+    </header>
+
+    <main>
+        <h2>Welcome to My Website</h2>
+        <p>
+            Resize the browser window to see the footer change its layout.
+        </p>
+    </main>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>About</h3>
+                <p>Student Practical Programs Website</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>Email: student@example.com</p>
+                <p>Phone: 9876543210</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Student Practical Programs
+        </div>
+
+    </footer>
+
+</body>
+</html>
+```

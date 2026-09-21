@@ -1,0 +1,167 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 56 - Restaurant Webpage</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #1f2937;
+        }
+
+        .nav {
+            background: white;
+            padding: 15px 25px;
+        }
+
+        .nav a {
+            color: #2563eb;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin: 0 0 10px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: #1e3a8a;
+            padding: 15px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .food-list {
+            display: flex;
+            gap: 20px;
+        }
+
+        .food-card {
+            flex: 1;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .food-card h2 {
+            color: #1e3a8a;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            .food-list {
+                flex-direction: column;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="index.html">← CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-57.html">Next →</a>
+    </div>
+
+    <header>
+        <h1>Delicious Bites</h1>
+        <p>Fresh Food • Great Taste • Happy Moments</p>
+    </header>
+
+    <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main class="container">
+
+        <h2>Our Popular Dishes</h2>
+
+        <div class="food-list">
+
+            <div class="food-card">
+                <h2>Veg Pizza</h2>
+                <p>Fresh vegetables with delicious cheese.</p>
+                <p class="price">₹249</p>
+            </div>
+
+            <div class="food-card">
+                <h2>Veg Burger</h2>
+                <p>Crispy patty with fresh vegetables.</p>
+                <p class="price">₹149</p>
+            </div>
+
+            <div class="food-card">
+                <h2>Fried Rice</h2>
+                <p>Fresh vegetables and perfectly cooked rice.</p>
+                <p class="price">₹179</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Delicious Bites</p>
+    </footer>
+
+</body>
+</html>
+```

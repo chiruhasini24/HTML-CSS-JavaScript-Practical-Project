@@ -1,0 +1,151 @@
+```html id="r7j2kd"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 61 - Grid Template Areas</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        .nav {
+            background: white;
+            padding: 15px 25px;
+        }
+
+        .nav a {
+            color: #2563eb;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: auto 1fr auto;
+
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+
+            min-height: 500px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .header {
+            grid-area: header;
+            background: #0f172a;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background: #dbeafe;
+            padding: 25px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #1e3a8a;
+            text-decoration: none;
+            margin: 12px 0;
+            font-weight: bold;
+        }
+
+        .main {
+            grid-area: main;
+            padding: 25px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 650px) {
+            .grid {
+                grid-template-columns: 1fr;
+
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "main"
+                    "footer";
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="index.html">← CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-62.html">Next →</a>
+    </div>
+
+    <div class="container">
+
+        <h1>CSS Grid Template Areas</h1>
+
+        <div class="grid">
+
+            <header class="header">
+                <h2>My Website</h2>
+            </header>
+
+            <aside class="sidebar">
+                <h3>Menu</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </aside>
+
+            <main class="main">
+                <h2>Welcome</h2>
+                <p>
+                    This layout is created using CSS Grid
+                    <strong>grid-template-areas</strong>.
+                </p>
+                <p>
+                    Each section is assigned a named grid area.
+                </p>
+            </main>
+
+            <footer class="footer">
+                © 2026 My Website
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

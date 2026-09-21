@@ -1,0 +1,124 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #12355b;
+        }
+
+        .box {
+            padding: 20px;
+            background: #eaf1f8;
+            margin: 20px 0;
+        }
+
+        /* Descendant combinator */
+        .box p {
+            color: #2563a6;
+        }
+
+        /* Child combinator */
+        .box > h3 {
+            color: green;
+        }
+
+        /* Adjacent sibling */
+        h4 + p {
+            background: #fff3cd;
+            padding: 10px;
+        }
+
+        /* General sibling */
+        h5 ~ p {
+            border-left: 4px solid #12355b;
+            padding: 8px;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 25px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            background: #12355b;
+            color: white;
+            padding: 10px 18px;
+            margin: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>CSS Combinators</h1>
+
+        <div class="box">
+
+            <h3>Child Combinator</h3>
+
+            <p>
+                This paragraph is a direct child of the box.
+            </p>
+
+            <div>
+                <p>
+                    This paragraph is a nested descendant.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="box">
+
+            <h4>Adjacent Sibling</h4>
+
+            <p>
+                This paragraph immediately follows h4.
+            </p>
+
+            <h5>General Sibling</h5>
+
+            <p>First paragraph after h5.</p>
+
+            <p>Second paragraph after h5.</p>
+
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="index.html">Back to CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-29.html">Next Program</a>
+    </div>
+
+</body>
+</html>
+```

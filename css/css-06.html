@@ -1,0 +1,124 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Program 06</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fb;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 12px;
+        }
+
+        .box {
+            background-color: #dbeafe;
+            border: 3px solid #2563eb;
+            margin: 15px 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .fixed-size {
+            width: 300px;
+            height: 120px;
+        }
+
+        .percentage-size {
+            width: 80%;
+            height: 100px;
+        }
+
+        .max-size {
+            width: 100%;
+            max-width: 500px;
+            min-height: 100px;
+        }
+
+        .navigation {
+            margin-top: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            margin-right: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CSS Program 06</h1>
+    <p>Width, Height and Sizing Properties</p>
+</header>
+
+<main class="container">
+
+    <h2>Fixed Width and Height</h2>
+
+    <div class="box fixed-size">
+        Width: 300px<br>
+        Height: 120px
+    </div>
+
+    <h2>Percentage Width</h2>
+
+    <div class="box percentage-size">
+        Width: 80%
+    </div>
+
+    <h2>Maximum Width and Minimum Height</h2>
+
+    <div class="box max-size">
+        max-width: 500px<br>
+        min-height: 100px
+    </div>
+
+    <div class="navigation">
+        <a href="index.html">Back to CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-07.html">Next Program →</a>
+    </div>
+
+</main>
+
+<footer>
+    HTML & CSS & JavaScript Practical Programs
+</footer>
+
+</body>
+</html>
+```
