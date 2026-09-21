@@ -1,0 +1,128 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 73 - clamp(), min() and max()</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        .nav {
+            background: white;
+            padding: 15px 25px;
+        }
+
+        .nav a {
+            color: #2563eb;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .container {
+            width: min(90%, 1000px);
+            margin: 40px auto;
+        }
+
+        .card {
+            background: white;
+            padding: max(20px, 4vw);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(30px, 6vw, 65px);
+            color: #1e3a8a;
+        }
+
+        p {
+            font-size: clamp(16px, 2vw, 22px);
+            line-height: 1.6;
+        }
+
+        .box {
+            width: min(100%, 600px);
+            min-height: 150px;
+            margin: 30px auto;
+            background: #dbeafe;
+            padding: max(20px, 3vw);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+
+        .info {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        code {
+            background: #e5e7eb;
+            padding: 3px 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="index.html">← CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-74.html">Next →</a>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>CSS Size Functions</h1>
+
+            <p>
+                Resize the browser to observe the responsive sizing.
+            </p>
+
+            <div class="box">
+                Responsive Box
+            </div>
+
+            <div class="info">
+
+                <h2>Functions Used</h2>
+
+                <p>
+                    <code>clamp()</code> sets a minimum, preferred
+                    and maximum value.
+                </p>
+
+                <p>
+                    <code>min()</code> selects the smaller value.
+                </p>
+
+                <p>
+                    <code>max()</code> selects the larger value.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

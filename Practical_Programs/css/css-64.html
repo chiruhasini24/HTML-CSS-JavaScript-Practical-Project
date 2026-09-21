@@ -1,0 +1,142 @@
+```html id="8f2kcd"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 64 - Mobile-First Responsive Design</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        .nav {
+            background: white;
+            padding: 15px 25px;
+        }
+
+        .nav a {
+            color: #2563eb;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .container {
+            width: 100%;
+            padding: 20px;
+            margin: auto;
+        }
+
+        .hero {
+            background: #0f172a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            color: #1e3a8a;
+        }
+
+        /* Tablet */
+        @media (min-width: 600px) {
+
+            .container {
+                max-width: 700px;
+            }
+
+            .cards {
+                flex-direction: row;
+            }
+
+            .card {
+                flex: 1;
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 1000px) {
+
+            .container {
+                max-width: 1100px;
+            }
+
+            .hero {
+                padding: 70px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="index.html">← CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-65.html">Next →</a>
+    </div>
+
+    <main class="container">
+
+        <section class="hero">
+            <h1>Mobile-First Design</h1>
+            <p>
+                This webpage is designed for mobile devices first
+                and then expanded for larger screens.
+            </p>
+        </section>
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>Responsive</h2>
+                <p>
+                    The layout adjusts automatically according
+                    to the screen size.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Flexible</h2>
+                <p>
+                    Flexbox is used to create a flexible layout.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Mobile Friendly</h2>
+                <p>
+                    The basic design starts with a mobile layout.
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
+```

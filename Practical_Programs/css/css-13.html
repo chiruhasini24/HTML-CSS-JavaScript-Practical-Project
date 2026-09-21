@@ -1,0 +1,201 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Program 13</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fb;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+
+        .gender {
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #2563eb;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .navigation {
+            margin-top: 25px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            margin-right: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CSS Program 13</h1>
+    <p>Styled Registration Form</p>
+</header>
+
+<main class="container">
+
+    <h2>Student Registration</h2>
+
+    <form>
+
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter phone number"
+            >
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+
+            <input
+                type="radio"
+                name="gender"
+                class="gender"
+            > Male
+
+            <input
+                type="radio"
+                name="gender"
+                class="gender"
+            > Female
+        </div>
+
+        <div class="form-group">
+            <label for="course">Course</label>
+
+            <select id="course">
+                <option>B.Tech</option>
+                <option>BCA</option>
+                <option>B.Sc</option>
+                <option>MCA</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Address</label>
+
+            <textarea
+                id="message"
+                rows="4"
+                placeholder="Enter your address"
+            ></textarea>
+        </div>
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+    <div class="navigation">
+        <a href="index.html">Back to CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-14.html">Next Program →</a>
+    </div>
+
+</main>
+
+<footer>
+    HTML & CSS & JavaScript Practical Programs
+</footer>
+
+</body>
+</html>
+```

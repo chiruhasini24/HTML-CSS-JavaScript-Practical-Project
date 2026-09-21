@@ -1,0 +1,77 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Program 01</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style-01.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .internal {
+            color: #2563eb;
+            background-color: #eff6ff;
+            padding: 15px;
+            border: 2px solid #2563eb;
+            border-radius: 8px;
+        }
+
+        .demo {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS Program 01</h1>
+        <p>Inline, Internal and External CSS</p>
+    </header>
+
+    <main class="container">
+
+        <div class="demo">
+
+            <h2>1. Inline CSS</h2>
+
+            <p style="color: #dc2626; font-size: 20px; font-weight: bold;">
+                This paragraph uses Inline CSS.
+            </p>
+
+            <h2>2. Internal CSS</h2>
+
+            <p class="internal">
+                This paragraph uses Internal CSS.
+            </p>
+
+            <h2>3. External CSS</h2>
+
+            <p class="external">
+                This paragraph uses External CSS.
+            </p>
+
+            <div class="navigation">
+                <a href="index.html">Back to CSS Programs</a>
+                <a href="../index.html">Home</a>
+                <a href="css-02.html">Next Program →</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        HTML & CSS & JavaScript Practical Programs
+    </footer>
+
+</body>
+</html>
+

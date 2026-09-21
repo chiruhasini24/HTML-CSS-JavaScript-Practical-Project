@@ -1,0 +1,257 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Homepage</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #222;
+            background: #f4f7fb;
+        }
+
+        header {
+            background: #12355b;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background: #dceaf7;
+        }
+
+        .hero-content h2 {
+            font-size: 42px;
+            color: #12355b;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #12355b;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background: #2563a6;
+        }
+
+        .services {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .services h2 {
+            color: #12355b;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #2563a6;
+            margin-bottom: 12px;
+        }
+
+        .about {
+            padding: 50px 8%;
+            background: white;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #12355b;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #12355b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                display: inline-block;
+            }
+
+            .hero-content h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+
+        <h1>My Website</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h2>Welcome to My Website</h2>
+
+            <p>
+                A simple responsive homepage created using HTML and CSS.
+            </p>
+
+            <a href="#services" class="button">Explore</a>
+
+        </div>
+
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+
+        <h2>Our Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>
+                    Creating clean and responsive websites.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Development</h3>
+                <p>
+                    Building functional web applications.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Support</h3>
+                <p>
+                    Providing reliable technical support.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            We create simple, modern and responsive websites
+            using HTML and CSS.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>&copy; 2026 My Website. All Rights Reserved.</p>
+
+    </footer>
+
+    <!-- Program Navigation -->
+    <div style="text-align:center; padding:25px;">
+
+        <a href="index.html"
+           style="background:#12355b;color:white;padding:10px 18px;
+                  text-decoration:none;border-radius:5px;margin:5px;
+                  display:inline-block;">
+            Back to CSS Programs
+        </a>
+
+        <a href="../index.html"
+           style="background:#12355b;color:white;padding:10px 18px;
+                  text-decoration:none;border-radius:5px;margin:5px;
+                  display:inline-block;">
+            Home
+        </a>
+
+        <a href="css-26.html"
+           style="background:#12355b;color:white;padding:10px 18px;
+                  text-decoration:none;border-radius:5px;margin:5px;
+                  display:inline-block;">
+            Next Program
+        </a>
+
+    </div>
+
+</body>
+</html>
+```

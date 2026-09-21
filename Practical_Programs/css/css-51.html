@@ -1,0 +1,135 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 51 - Fixed Sidebar</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 230px;
+            height: 100%;
+            background: #0f172a;
+            color: white;
+            padding: 25px 15px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 6px;
+        }
+
+        .sidebar a:hover {
+            background: #2563eb;
+        }
+
+        .content {
+            margin-left: 230px;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .nav {
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #2563eb;
+            margin-right: 15px;
+        }
+
+        @media (max-width: 700px) {
+            .sidebar {
+                width: 180px;
+            }
+
+            .content {
+                margin-left: 180px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h2>My Menu</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Courses</a>
+        <a href="#">Settings</a>
+    </div>
+
+    <div class="content">
+
+        <div class="nav">
+            <a href="index.html">← CSS Programs</a>
+            <a href="../index.html">Home</a>
+            <a href="css-52.html">Next →</a>
+        </div>
+
+        <div class="card">
+            <h1>Fixed Sidebar</h1>
+            <p>
+                This webpage demonstrates a fixed sidebar using
+                <strong>position: fixed</strong>.
+            </p>
+
+            <h2>CSS Property Used</h2>
+            <p>
+                The sidebar remains fixed on the left side of the screen
+                even when the page is scrolled.
+            </p>
+
+            <p>
+                Scroll the page to observe the fixed sidebar.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                This additional content demonstrates scrolling behavior.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum vitae lorem vel mauris tincidunt tincidunt.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

@@ -1,0 +1,117 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+        }
+
+        h1 {
+            text-align: center;
+            color: #12355b;
+            margin: 30px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .box {
+            height: 120px;
+            margin: 25px 0;
+            padding: 20px;
+            background: white;
+            border: 2px solid #2563a6;
+            border-radius: 8px;
+        }
+
+        .visible {
+            overflow: visible;
+        }
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        .scroll {
+            overflow: scroll;
+        }
+
+        .auto {
+            overflow: auto;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 40px 0 30px;
+            clear: both;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            background: #12355b;
+            color: white;
+            padding: 10px 18px;
+            margin: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Overflow</h1>
+
+    <div class="container">
+
+        <h2>Visible</h2>
+        <div class="box visible">
+            This box uses overflow: visible.
+            Extra content can appear outside the box.
+            This demonstrates how visible overflow behaves
+            when the content is larger than the container.
+        </div>
+
+        <h2>Hidden</h2>
+        <div class="box hidden">
+            This box uses overflow: hidden.
+            Extra content outside the box is hidden.
+            This text continues to demonstrate the effect.
+        </div>
+
+        <h2>Scroll</h2>
+        <div class="box scroll">
+            This box uses overflow: scroll.
+            Scrollbars are available when content is larger
+            than the specified box dimensions.
+            More text is added here to demonstrate scrolling.
+        </div>
+
+        <h2>Auto</h2>
+        <div class="box auto">
+            This box uses overflow: auto.
+            Scrollbars appear only when they are required.
+            This is useful for responsive content containers.
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="index.html">Back to CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-36.html">Next Program</a>
+    </div>
+
+</body>
+</html>
+```

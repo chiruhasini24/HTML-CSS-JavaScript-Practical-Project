@@ -1,0 +1,439 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Practical Programs</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f5f7fb;
+            color: #1e293b;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #dbeafe;
+            font-size: 16px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .top-navigation {
+            margin-bottom: 30px;
+        }
+
+        .home-btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background-color: #1d4ed8;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .home-btn:hover {
+            background-color: #1e40af;
+        }
+
+        .program-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .program-card {
+            background-color: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            box-shadow: 0 3px 10px rgba(15, 23, 42, 0.06);
+            transition: 0.3s ease;
+        }
+
+        .program-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+        }
+
+        .program-number {
+            min-width: 45px;
+            height: 45px;
+            border-radius: 8px;
+            background-color: #fee2e2;
+            color: #dc2626;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .program-name {
+            flex: 1;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .view-btn {
+            padding: 9px 15px;
+            background-color: #1d4ed8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+
+        .view-btn:hover {
+            background-color: #1e40af;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 22px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 750px) {
+
+            .program-list {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .program-card {
+                flex-wrap: wrap;
+            }
+
+            .view-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>HTML Practical Programs</h1>
+
+        <p>15 HTML Programs</p>
+
+    </header>
+
+
+
+    <main class="container">
+
+
+        <!-- Navigation -->
+
+        <div class="top-navigation">
+
+            <a href="../index.html" class="home-btn">
+                ← Back to Home
+            </a>
+
+        </div>
+
+
+
+        <!-- Program List -->
+
+        <div class="program-list">
+
+
+            <div class="program-card">
+
+                <div class="program-number">01</div>
+
+                <div class="program-name">
+                    Basic HTML Webpage
+                </div>
+
+                <a href="html-01.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">02</div>
+
+                <div class="program-name">
+                    Ordered, Unordered and Description Lists
+                </div>
+
+                <a href="html-02.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">03</div>
+
+                <div class="program-name">
+                    HTML Tables
+                </div>
+
+                <a href="html-03.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">04</div>
+
+                <div class="program-name">
+                    Images and Hyperlinks
+                </div>
+
+                <a href="html-04.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">05</div>
+
+                <div class="program-name">
+                    Student Registration Form
+                </div>
+
+                <a href="html-05.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">06</div>
+
+                <div class="program-name">
+                    Audio and Video
+                </div>
+
+                <a href="html-06.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">07</div>
+
+                <div class="program-name">
+                    Frames and Iframes
+                </div>
+
+                <a href="html-07.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">08</div>
+
+                <div class="program-name">
+                    HTML Semantic Elements
+                </div>
+
+                <a href="html-08.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">09</div>
+
+                <div class="program-name">
+                    HTML5 Input Types
+                </div>
+
+                <a href="html-09.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">10</div>
+
+                <div class="program-name">
+                    College Timetable
+                </div>
+
+                <a href="html-10.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">11</div>
+
+                <div class="program-name">
+                    Internal and External CSS
+                </div>
+
+                <a href="html-11.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">12</div>
+
+                <div class="program-name">
+                    CSS Selectors, Colors and Fonts
+                </div>
+
+                <a href="html-12.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">13</div>
+
+                <div class="program-name">
+                    Responsive Webpage
+                </div>
+
+                <a href="html-13.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">14</div>
+
+                <div class="program-name">
+                    Bootstrap Components
+                </div>
+
+                <a href="html-14.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-number">15</div>
+
+                <div class="program-name">
+                    Personal Portfolio
+                </div>
+
+                <a href="html-15.html" class="view-btn">
+                    View Program
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>HTML Practical Programs</p>
+
+        <p>15 Programs</p>
+
+    </footer>
+
+
+</body>
+
+</html>
+```

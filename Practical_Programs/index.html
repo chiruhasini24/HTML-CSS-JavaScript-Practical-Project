@@ -1,0 +1,423 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Technology Practical Programs</title>
+
+    <style>
+
+        /* ---------- General Styling ---------- */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f5f7fb;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+
+        /* ---------- Header ---------- */
+
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #dbeafe;
+        }
+
+
+        /* ---------- Main Container ---------- */
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: 50px auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            font-size: 28px;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: #64748b;
+            font-size: 16px;
+        }
+
+
+        /* ---------- Cards ---------- */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 35px 28px;
+            text-align: center;
+            box-shadow: 0 5px 18px rgba(15, 23, 42, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(15, 23, 42, 0.14);
+        }
+
+
+        /* ---------- Card Icons ---------- */
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .html-icon {
+            background-color: #fee2e2;
+            color: #dc2626;
+        }
+
+        .css-icon {
+            background-color: #dbeafe;
+            color: #2563eb;
+        }
+
+        .js-icon {
+            background-color: #fef3c7;
+            color: #b45309;
+        }
+
+
+        /* ---------- Card Content ---------- */
+
+        .card h3 {
+            font-size: 23px;
+            margin-bottom: 12px;
+            color: #0f172a;
+        }
+
+        .card p {
+            color: #64748b;
+            font-size: 15px;
+            margin-bottom: 22px;
+            min-height: 72px;
+        }
+
+        .program-count {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #475569;
+            margin-bottom: 18px;
+        }
+
+
+        /* ---------- Buttons ---------- */
+
+        .btn {
+            display: inline-block;
+            padding: 11px 22px;
+
+            background-color: #1d4ed8;
+            color: white;
+
+            text-decoration: none;
+            border-radius: 6px;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #1e40af;
+        }
+
+
+        /* ---------- Information Section ---------- */
+
+        .info {
+            margin-top: 45px;
+            background-color: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .info h3 {
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        .info p {
+            color: #64748b;
+            font-size: 15px;
+        }
+
+
+        /* ---------- Footer ---------- */
+
+        footer {
+            background-color: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 4px 0;
+            font-size: 14px;
+        }
+
+
+        /* ---------- Responsive Design ---------- */
+
+        @media (max-width: 900px) {
+
+            .cards {
+                grid-template-columns: 1fr;
+                max-width: 550px;
+                margin: auto;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+
+            header {
+                padding: 40px 15px;
+            }
+
+            header h1 {
+                font-size: 26px;
+            }
+
+            header p {
+                font-size: 15px;
+            }
+
+            .container {
+                width: 92%;
+            }
+
+            .card {
+                padding: 28px 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <h1>Web Technology Practical Programs</h1>
+
+        <p>HTML • CSS • JavaScript</p>
+
+    </header>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="container">
+
+
+        <div class="section-title">
+
+            <h2>Practical Programs</h2>
+
+            <p>
+                Select a section to view and execute the practical programs.
+            </p>
+
+        </div>
+
+
+
+        <!-- ================= PROGRAM CARDS ================= -->
+
+        <div class="cards">
+
+
+            <!-- HTML CARD -->
+
+            <div class="card">
+
+                <div class="icon html-icon">
+                    HTML
+                </div>
+
+                <h3>HTML Programs</h3>
+
+                <p>
+                    Basic and advanced HTML programs covering
+                    forms, tables, multimedia, semantic elements
+                    and responsive webpages.
+                </p>
+
+                <span class="program-count">
+                    15 Practical Programs
+                </span>
+
+                <a href="html/index.html" class="btn">
+                    View Programs
+                </a>
+
+            </div>
+
+
+
+            <!-- CSS CARD -->
+
+            <div class="card">
+
+                <div class="icon css-icon">
+                    CSS
+                </div>
+
+                <h3>CSS Programs</h3>
+
+                <p>
+                    CSS programs covering selectors, layouts,
+                    Flexbox, Grid, animations, transitions
+                    and responsive web design.
+                </p>
+
+                <span class="program-count">
+                    75 Practical Programs
+                </span>
+
+                <a href="css/index.html" class="btn">
+                    View Programs
+                </a>
+
+            </div>
+
+
+
+            <!-- JAVASCRIPT CARD -->
+
+            <div class="card">
+
+                <div class="icon js-icon">
+                    JS
+                </div>
+
+                <h3>JavaScript Programs</h3>
+
+                <p>
+                    JavaScript programs covering functions,
+                    arrays, DOM manipulation, events, validation,
+                    APIs and interactive applications.
+                </p>
+
+                <span class="program-count">
+                    67 Practical Programs
+                </span>
+
+                <a href="javascript/index.html" class="btn">
+                    View Programs
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ================= INFORMATION ================= -->
+
+        <div class="info">
+
+            <h3>Practical Assignment</h3>
+
+            <p>
+                This website contains a complete collection of
+                HTML, CSS and JavaScript practical programs
+                organized into separate sections for easy access.
+            </p>
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            HTML, CSS & JavaScript Practical Programs
+        </p>
+
+        <p>
+            Total Programs: 157
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
+```

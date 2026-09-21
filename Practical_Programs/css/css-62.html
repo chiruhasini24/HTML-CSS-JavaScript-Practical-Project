@@ -1,0 +1,135 @@
+```html id="q1v6pz"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 62 - Flexbox Alignment and Ordering</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        .nav {
+            background: white;
+            padding: 15px 25px;
+        }
+
+        .nav a {
+            color: #2563eb;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .flex-box {
+            min-height: 300px;
+            background: white;
+            border: 2px solid #2563eb;
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .item {
+            width: 120px;
+            height: 100px;
+            background: #dbeafe;
+            color: #1e3a8a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .item1 {
+            order: 3;
+        }
+
+        .item2 {
+            order: 1;
+        }
+
+        .item3 {
+            order: 2;
+        }
+
+        .explanation {
+            background: white;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 10px;
+        }
+
+        code {
+            background: #e5e7eb;
+            padding: 3px 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="index.html">← CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-63.html">Next →</a>
+    </div>
+
+    <div class="container">
+
+        <h1>Flexbox Alignment and Ordering</h1>
+
+        <div class="flex-box">
+
+            <div class="item item1">Item 1</div>
+            <div class="item item2">Item 2</div>
+            <div class="item item3">Item 3</div>
+
+        </div>
+
+        <div class="explanation">
+
+            <h2>Properties Used</h2>
+
+            <p>
+                <code>display: flex;</code> creates a flex container.
+            </p>
+
+            <p>
+                <code>justify-content: center;</code> aligns items
+                horizontally.
+            </p>
+
+            <p>
+                <code>align-items: center;</code> aligns items vertically.
+            </p>
+
+            <p>
+                <code>order</code> changes the visual order of flex items.
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

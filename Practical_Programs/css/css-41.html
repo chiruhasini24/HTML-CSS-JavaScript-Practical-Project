@@ -1,0 +1,110 @@
+```html id="h5q0sm"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tooltip</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 120px;
+        }
+
+        h1 {
+            color: #12355b;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 25px;
+            background: #12355b;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            width: 180px;
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+
+            position: absolute;
+            bottom: 130%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            border-width: 6px;
+            border-style: solid;
+            border-color: #222 transparent transparent transparent;
+        }
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 100px 30px 30px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            background: #12355b;
+            color: white;
+            padding: 10px 18px;
+            margin: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>CSS Tooltip</h1>
+
+        <div class="tooltip">
+            Hover Over Me
+
+            <span class="tooltip-text">
+                This is a CSS tooltip!
+            </span>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="index.html">Back to CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-42.html">Next Program</a>
+    </div>
+
+</body>
+</html>
+```

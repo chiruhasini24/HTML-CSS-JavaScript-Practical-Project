@@ -1,0 +1,150 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 58 - Travel Homepage</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        .nav {
+            background: white;
+            padding: 15px 25px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #2563eb;
+            margin-right: 15px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f172a, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            background: white;
+            color: #1e3a8a;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .destinations {
+            display: flex;
+            gap: 20px;
+        }
+
+        .destination {
+            flex: 1;
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .destination .icon {
+            font-size: 50px;
+        }
+
+        .destination h2 {
+            color: #1e3a8a;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .destinations {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="index.html">← CSS Programs</a>
+        <a href="../index.html">Home</a>
+        <a href="css-59.html">Next →</a>
+    </div>
+
+    <header>
+        <h1>Explore the World</h1>
+        <p>Discover new places and create unforgettable memories.</p>
+        <button>Explore Now</button>
+    </header>
+
+    <main class="container">
+
+        <h2>Popular Destinations</h2>
+
+        <div class="destinations">
+
+            <div class="destination">
+                <div class="icon">🏖️</div>
+                <h2>Goa</h2>
+                <p>Enjoy beautiful beaches and relaxing holidays.</p>
+            </div>
+
+            <div class="destination">
+                <div class="icon">🏔️</div>
+                <h2>Manali</h2>
+                <p>Experience mountains, snow and natural beauty.</p>
+            </div>
+
+            <div class="destination">
+                <div class="icon">🏛️</div>
+                <h2>Delhi</h2>
+                <p>Explore history, culture and modern attractions.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Explore the World</p>
+    </footer>
+
+</body>
+</html>
+```
